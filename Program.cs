@@ -1,11 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace JurasicPark
 {
     class Program
     {
+        class Dinosaur
+        {
+            public string Name { get; set; }
+            public string DietType { get; set; }
+            public DateTime whenAcquired { get; set; } = DateTime.Now;
+            public int Weight { get; set; }
+            public int Enclosure { get; set; }
+
+        }
         static void Main(string[] args)
         {
+
+            var dinosaurs = new List<Dinosaur>();
+
             //       P - Problem
 
             // Create a console application that manages a zoo full of dinosaurs.
@@ -75,13 +89,46 @@ namespace JurasicPark
                 Console.WriteLine("SUMMARY - Display number of herbivores and carnivores");
                 Console.WriteLine("QUIT - This will exit the program");
                 Console.WriteLine();
-                Console.WriteLine("choice:");
-                var choice = Console.ReadLine();
+                Console.WriteLine("CHOICE:");
+                var choice = Console.ReadLine().ToUpper();
 
                 if (choice == "QUIT")
                 {
                     hasQuitTheApplication = true;
                 }
+
+                if (choice == "VIEW")
+                {
+                    // Show a list of all the dinosaurs.
+
+
+
+
+                }
+
+                if (choice == "ADD")
+                {
+                    // Show a list of all the dinosaurs.
+
+                }
+
+                if (choice == "REMOVE")
+                {
+                    // Show a list of all the dinosaurs.
+
+                }
+                if (choice == "TRANSFER")
+                {
+                    // Show a list of all the dinosaurs.
+
+                }
+                if (choice == "SUMMARY")
+                {
+                    // Show a list of all the dinosaurs.
+
+                }
+
+
 
                 Console.WriteLine("---GOODBYE---");
 
